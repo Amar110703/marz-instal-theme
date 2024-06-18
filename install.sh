@@ -8,7 +8,7 @@ KUNING='\033[0;33m'
 NC='\033[0m'
 
 # Array untuk menyimpan token-token yang valid
-valid_tokens=("marz001" "kyeestore" "token_kedua")
+valid_tokens=("marz001" "kyeestore" "public_token_marz")
 
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
