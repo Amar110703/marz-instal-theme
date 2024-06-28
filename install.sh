@@ -10,6 +10,9 @@ NC='\033[0m'
 echo "SILAHKAN MASUKAN USER ANDA"
 read user
 
+# Array untuk menyimpan token-token yang valid
+valid_tokens=("marz001" "kyeestore" "public_token_marz")
+
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
   echo -e ""
@@ -222,9 +225,6 @@ uninstall_theme() {
 # Skrip utama
 display_welcome
 authenticate
-
-# Array untuk menyimpan token-token yang valid
-valid_tokens=("marz001" "kyeestore" "public_token_marz")
 
 while true; do
   clear
