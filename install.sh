@@ -7,11 +7,8 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
-echo "SILAHKAN MASUKAN USER ANDA"
-read user
-
-# Array untuk menyimpan token-token yang valid
-valid_tokens=("marz001" "kyeestore" "public_token_marz")
+# pler
+source ./pler.sh
 
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
@@ -20,7 +17,7 @@ display_welcome() {
   echo -e "${BIRU}|    USER    |                SAMBUTAN               |${NC}"
   echo -e "${BIRU}+------------+---------------------------------------+${NC}"
   echo -e "${BIRU}|            |                                       |${NC}"
-  echo -e "${BIRU}|${user}     |  SELAMAT DATANG DI SCRIPT AUTO INSTAL |${NC}"
+  echo -e "${BIRU}|            |  SELAMAT DATANG DI SCRIPT AUTO INSTAL |${NC}"
   echo -e "${BIRU}|            |      YANG DIBUAT OLEH MARZ OFFC       |${NC}"
   echo -e "${BIRU}|            |                                       |${NC}"
   echo -e "${BIRU}+------------+---------------------------------------+${NC}"
@@ -42,25 +39,8 @@ display_welcome() {
   sleep 10
 }
 
-# Fungsi untuk melakukan otentikasi pengguna
-authenticate() {
-  local authenticated=false
-  echo -e "Masukkan token:"
-  read -r USER_TOKEN
-  
-  # Memeriksa apakah token pengguna cocok dengan salah satu dari token-token valid
-  for token in "${valid_tokens[@]}"; do
-    if [ "$USER_TOKEN" == "$token" ]; then
-      authenticated=true
-      break
-    fi
-  done
-  
-  if ! $authenticated; then
-    echo -e "${MERAH}Token tidak valid. Keluar.${NC}"
-    exit 1
-  fi
-}
+# pemanggil pler
+authenticate
 
 # Fungsi untuk menginstal tema
 install_theme() {
