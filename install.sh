@@ -7,29 +7,35 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
-# Array untuk menyimpan token-token yang valid
-valid_tokens=("marz001" "kyeestore" "public_token_marz")
+echo "SILAHKAN MASUKAN USER ANDA"
+read user
 
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
   echo -e ""
-  echo -e "${BIRU}[+] =============================================== [+]${NC}"
-  echo -e "${BIRU}[+]                                                             [+]${NC}"
-  echo -e "${BIRU}[+]                AUTO INSTALLER THEMA                  [+]${NC}"
-  echo -e "${BIRU}[+]                  © MARZ OFFICIAL                        [+]${NC}"
-  echo -e "${BIRU}[+]                                                             [+]${NC}"
-  echo -e "${BIRU}[+] =============================================== [+]${NC}"
+  echo -e "${BIRU}+------------+---------------------------------------+${NC}"
+  echo -e "${BIRU}|    USER    |                SAMBUTAN               |${NC}"
+  echo -e "${BIRU}+------------+---------------------------------------+${NC}"
+  echo -e "${BIRU}|            |                                       |${NC}"
+  echo -e "${BIRU}|   ${user}  |  SELAMAT DATANG DI SCRIPT AUTO INSTAL |${NC}"
+  echo -e "${BIRU}|            |      YANG DIBUAT OLEH MARZ OFFC       |${NC}"
+  echo -e "${BIRU}|            |                                       |${NC}"
+  echo -e "${BIRU}+------------+---------------------------------------+${NC}"
+  echo -e "${BIRU}|                   PERINGATAN                       |${NC}"
+  echo -e "${BIRU}+----------------------------------------------------+${NC}"
+  echo -e "${BIRU}|                                                    |${NC}"
+  echo -e "${BIRU}|  JANGAN PERNAH MENJUAL SCRIPT ATAUPUN TOKEN INI    |${NC}"
+  echo -e "${BIRU}|                                                    |${NC}"
+  echo -e "${BIRU}+----------------------------------------------------+${NC}"
+  echo -e "${BIRU}|    WhatsApp  |    Youtube        |    Creadits     |${NC}"
+  echo -e "${BIRU}+--------------+-------------------+-----------------+${NC}"
+  echo -e "${BIRU}|              |                   |                 |${NC}"
+  echo -e "${BIRU}| 085960349812 | @MARZ OFFICIAL001 |  MARZ OFFICIAL  |${NC}"
+  echo -e "${BIRU}| 083854703793 |                   |                 |${NC}"
+  echo -e "${BIRU}|              |                   |                 |${NC}"
+  echo -e "${BIRU}+------------+---------------------+-----------------+${NC}"
   echo -e ""
-  echo -e "Script ini dibuat untuk mempermudah penginstalan tema Pterodactyl,"
-  echo -e "dilarang keras untuk diperjualbelikan."
   echo -e ""
-  echo -e "𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 :"
-  echo -e "085960349812"
-  echo -e "𝗬𝗢𝗨𝗧𝗨𝗕𝗘 :"
-  echo -e "@MARZ_OFFICIAL001"
-  echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "marz"
-  echo -e "amar"
   sleep 4
   clear
 }
@@ -217,6 +223,9 @@ uninstall_theme() {
 # Skrip utama
 display_welcome
 authenticate
+
+# Array untuk menyimpan token-token yang valid
+valid_tokens=("marz001" "kyeestore" "public_token_marz")
 
 while true; do
   clear
