@@ -7,8 +7,8 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
-# Panggil fungsi authenticate dari file pler.sh
-source /path/to/pler.sh
+# Panggil fungsi authenticate dari file auth.sh
+source ./auth.sh
 
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
