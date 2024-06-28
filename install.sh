@@ -8,7 +8,7 @@ KUNING='\033[0;33m'
 NC='\033[0m'
 
 # Panggil fungsi authenticate dari file pler.sh
-source /path/to/auth.sh
+source /path/to/pler.sh
 
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
