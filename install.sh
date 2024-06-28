@@ -17,7 +17,7 @@ display_welcome() {
   echo -e "${BIRU}|    USER    |                SAMBUTAN               |${NC}"
   echo -e "${BIRU}+------------+---------------------------------------+${NC}"
   echo -e "${BIRU}|            |                                       |${NC}"
-  echo -e "${BIRU}|   ${user}  |  SELAMAT DATANG DI SCRIPT AUTO INSTAL |${NC}"
+  echo -e "${BIRU}|${user}     |  SELAMAT DATANG DI SCRIPT AUTO INSTAL |${NC}"
   echo -e "${BIRU}|            |      YANG DIBUAT OLEH MARZ OFFC       |${NC}"
   echo -e "${BIRU}|            |                                       |${NC}"
   echo -e "${BIRU}+------------+---------------------------------------+${NC}"
