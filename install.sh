@@ -36,8 +36,7 @@ display_welcome() {
   echo -e "${BIRU}+------------+---------------------+-----------------+${NC}"
   echo -e ""
   echo -e ""
-  sleep 4
-  clear
+  sleep 10
 }
 
 # Fungsi untuk melakukan otentikasi pengguna
