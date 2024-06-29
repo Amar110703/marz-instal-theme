@@ -202,6 +202,24 @@ uninstall_theme() {
   clear
 }
 
+# Fungsi untuk menginstal panel
+instal_panel() {
+  echo -e "                                                       "
+  echo -e "${BIRU}[+] =============================================== [+]${NC}"
+  echo -e "${BIRU}[+]                    INSTAL PANEL                 [+]${NC}"
+  echo -e "${BIRU}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  bash <(curl -s https://pterodactyl-installer.se)
+  bash <(curl -s https://pterodactyl-installer.se)
+  echo -e "                                                       "
+  echo -e "${HIJAU}[+] =============================================== [+]${NC}"
+  echo -e "${HIJAU}[+]                 INSTAL PANEL SUKSES             [+]${NC}"
+  echo -e "${HIJAU}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  clear
+}
+
 # Skrip utama
 display_welcome
 authenticate
@@ -216,6 +234,7 @@ while true; do
   echo -e "SELECT OPTION :"
   echo "1. Install theme"
   echo "2. Uninstall theme"
+  echo "3. Instal panel"
   echo "x. Exit"
   echo -e "Masukkan pilihan (1/2/x):"
   read -r MENU_CHOICE
@@ -227,6 +246,9 @@ while true; do
       ;;
     2)
       uninstall_theme
+      ;;
+    3)
+      instal_panel
       ;;
     x)
       echo "Keluar dari skrip."
