@@ -7,24 +7,26 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
-# Panggil fungsi authenticate dari file auth.sh
-source ./auth.sh
+echo "Silahkan masukan nama anda 😂😂"
+read nama
+
+
 
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
   echo -e ""
-  echo -e "${BIRU}+------------+---------------------------------------+${NC}"
-  echo -e "${BIRU}|    USER    |                SAMBUTAN               |${NC}"
-  echo -e "${BIRU}+------------+---------------------------------------+${NC}"
-  echo -e "${BIRU}|            |                                       |${NC}"
-  echo -e "${BIRU}|            |  SELAMAT DATANG DI SCRIPT AUTO INSTAL |${NC}"
-  echo -e "${BIRU}|            |      YANG DIBUAT OLEH MARZ OFFC       |${NC}"
-  echo -e "${BIRU}|            |                                       |${NC}"
-  echo -e "${BIRU}+------------+---------------------------------------+${NC}"
+  echo -e "${BIRU}+---------------------------------------------------+${NC}"
+  echo -e "${BIRU}|                     SAMBUTAN                       |${NC}"
+  echo -e "${BIRU}+---------------------------------------------------+${NC}"
+  echo -e "${BIRU}|                                                    |${NC}"
+  echo -e "${BIRU}|   SELAMAT DATANG ${nama} DI SCRIPT AUTO INSTAL     |${NC}"
+  echo -e "${BIRU}|            YANG DIBUAT OLEH MARZ OFFC              |${NC}"
+  echo -e "${BIRU}|                                                    |${NC}"
+  echo -e "${BIRU}+------------ ---------------------------------------+${NC}"
   echo -e "${BIRU}|                   PERINGATAN                       |${NC}"
   echo -e "${BIRU}+----------------------------------------------------+${NC}"
   echo -e "${BIRU}|                                                    |${NC}"
-  echo -e "${BIRU}|  JANGAN PERNAH MENJUAL SCRIPT ATAUPUN TOKEN INI    |${NC}"
+  echo -e "${BIRU}|        JANGAN PERNAH MENJUAL SCRIPT INI            |${NC}"
   echo -e "${BIRU}|                                                    |${NC}"
   echo -e "${BIRU}+----------------------------------------------------+${NC}"
   echo -e "${BIRU}|    WhatsApp  |    Youtube        |    Creadits     |${NC}"
@@ -36,11 +38,9 @@ display_welcome() {
   echo -e "${BIRU}+------------+---------------------+-----------------+${NC}"
   echo -e ""
   echo -e ""
-  sleep 10
+  sleep 30
 }
 
-# Panggil fungsi authenticate untuk memverifikasi token
-authenticate
 
 # Fungsi untuk menginstal tema
 install_theme() {
