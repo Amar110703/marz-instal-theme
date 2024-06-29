@@ -7,7 +7,7 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
-echo "Silahkan masukan nama anda 😂😂"
+echo "${BIRU}Silahkan masukan nama anda 😂😂"
 read nama
 
 
@@ -15,27 +15,27 @@ read nama
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
   echo -e ""
-  echo -e "${BIRU}+---------------------------------------------------+${NC}"
+  echo -e "${BIRU}+----------------------------------------------------+${NC}"
   echo -e "${BIRU}|                     SAMBUTAN                       |${NC}"
-  echo -e "${BIRU}+---------------------------------------------------+${NC}"
+  echo -e "${BIRU}+----------------------------------------------------+${NC}"
   echo -e "${BIRU}|                                                    |${NC}"
   echo -e "${BIRU}|   SELAMAT DATANG ${nama} DI SCRIPT AUTO INSTAL     |${NC}"
   echo -e "${BIRU}|            YANG DIBUAT OLEH MARZ OFFC              |${NC}"
   echo -e "${BIRU}|                                                    |${NC}"
-  echo -e "${BIRU}+------------ ---------------------------------------+${NC}"
+  echo -e "${BIRU}+----------------------------------------------------+${NC}"
   echo -e "${BIRU}|                   PERINGATAN                       |${NC}"
   echo -e "${BIRU}+----------------------------------------------------+${NC}"
   echo -e "${BIRU}|                                                    |${NC}"
   echo -e "${BIRU}|        JANGAN PERNAH MENJUAL SCRIPT INI            |${NC}"
   echo -e "${BIRU}|                                                    |${NC}"
-  echo -e "${BIRU}+----------------------------------------------------+${NC}"
+  echo -e "${BIRU}+--------------+-------------------+-----------------+${NC}"
   echo -e "${BIRU}|    WhatsApp  |    Youtube        |    Creadits     |${NC}"
   echo -e "${BIRU}+--------------+-------------------+-----------------+${NC}"
   echo -e "${BIRU}|              |                   |                 |${NC}"
   echo -e "${BIRU}| 085960349812 | @MARZ OFFICIAL001 |  MARZ OFFICIAL  |${NC}"
   echo -e "${BIRU}| 083854703793 |                   |                 |${NC}"
   echo -e "${BIRU}|              |                   |                 |${NC}"
-  echo -e "${BIRU}+------------+---------------------+-----------------+${NC}"
+  echo -e "${BIRU}+--------------+-------------------+-----------------+${NC}"
   echo -e ""
   echo -e ""
   sleep 30
