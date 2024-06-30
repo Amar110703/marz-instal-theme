@@ -243,7 +243,7 @@ while true; do
   echo "3. Instal panel"
   echo "4. Instal otomatis"
   echo "x. Exit"
-  echo -e "Masukkan pilihan (1/2/x):"
+  echo -e "Masukkan pilihan (1/2/3/4/x):"
   read -r MENU_CHOICE
   clear
 
