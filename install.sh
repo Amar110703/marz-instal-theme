@@ -19,7 +19,7 @@ display_welcome() {
   echo -e "${BIRU}|                     SAMBUTAN                       |${NC}"
   echo -e "${BIRU}+----------------------------------------------------+${NC}"
   echo -e "${BIRU}|                                                    |${NC}"
-  echo -e "${BIRU}|   SELAMAT DATANG ${nama} DI SCRIPT AUTO INSTAL     |${NC}"
+  echo -e "${BIRU}|   SELAMAT DATANG DI SCRIPT AUTO INSTAL             |${NC}"
   echo -e "${BIRU}|            YANG DIBUAT OLEH MARZ OFFC              |${NC}"
   echo -e "${BIRU}|                                                    |${NC}"
   echo -e "${BIRU}+----------------------------------------------------+${NC}"
@@ -29,7 +29,7 @@ display_welcome() {
   echo -e "${BIRU}|        JANGAN PERNAH MENJUAL SCRIPT INI            |${NC}"
   echo -e "${BIRU}|                                                    |${NC}"
   echo -e "${BIRU}+--------------+-------------------+-----------------+${NC}"
-  echo -e "${BIRU}|    WhatsApp  |    Youtube        |    Creadits     |${NC}"
+  echo -e "${BIRU}|    WhatsApp  |      Youtube      |    Creadits     |${NC}"
   echo -e "${BIRU}+--------------+-------------------+-----------------+${NC}"
   echo -e "${BIRU}|              |                   |                 |${NC}"
   echo -e "${BIRU}| 085960349812 | @MARZ OFFICIAL001 |  MARZ OFFICIAL  |${NC}"
@@ -222,9 +222,10 @@ instal_panel() {
 # Fungsi untuk menginstal otomatis
 instal_otomatis() {
 echo -e "${BIRU}Gausah ngeharap gw nambahin fitur ini😂😂"
+echo-e "${MERAH}Yang namanya ${nama} orang tolol 🗿
 sleep 10
 clear
-exit 0
+reboot
 }
 
 # Skrip utama
