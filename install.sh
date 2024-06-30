@@ -222,7 +222,7 @@ instal_panel() {
 # Fungsi untuk menginstal otomatis
 instal_otomatis() {
 echo -e "${BIRU}Gausah ngeharap gw nambahin fitur ini😂😂"
-echo -e "${MERAH}Yang namanya ${nama} orang tolol 🗿
+echo -e "${MERAH}Yang namanya ${nama} orang tolol 🗿"
 sleep 10
 clear
 reboot
@@ -253,7 +253,7 @@ while true; do
   echo "4. Instal otomatis"
   echo "5. Kata kata manis hari ini"
   echo "x. Exit"
-  echo -e "Masukkan pilihan :"
+  echo -e "Masukkan pilihan (1/2/3/4/5/x) :"
   read -r MENU_CHOICE
   clear
 
