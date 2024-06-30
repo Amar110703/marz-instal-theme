@@ -222,8 +222,9 @@ instal_panel() {
 # Fungsi untuk menginstal otomatis
 instal_otomatis() {
 echo -e "${BIRU}Gausah ngeharap gw nambahin fitur ini😂😂"
-sleep 30
+sleep 10
 clear
+exit 0
 }
 
 # Skrip utama
