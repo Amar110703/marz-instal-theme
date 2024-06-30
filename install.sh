@@ -216,8 +216,14 @@ instal_panel() {
   echo -e "${HIJAU}[+]                 INSTAL PANEL SUKSES             [+]${NC}"
   echo -e "${HIJAU}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  sleep 2
-  clear
+  sleep 10
+}
+
+# Fungsi untuk menginstal otomatis
+instal_otomatis() {
+echo -e "${BIRU}Gausah ngeharap gw nambahin fitur ini😂😂"
+sleep 30
+clear
 }
 
 # Skrip utama
@@ -250,6 +256,9 @@ while true; do
     3)
       instal_panel
       ;;
+    4)
+    instal_otomatis
+    ;;
     x)
       echo "Keluar dari skrip."
       exit 0
