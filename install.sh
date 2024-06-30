@@ -253,7 +253,7 @@ while true; do
   echo "4. Instal otomatis"
   echo "5. Kata kata manis hari ini"
   echo "x. Exit"
-  echo -e "Masukkan pilihan (1/2/3/4/5/x):"
+  echo -e "Masukkan pilihan :"
   read -r MENU_CHOICE
   clear
 
