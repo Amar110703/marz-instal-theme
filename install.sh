@@ -222,10 +222,17 @@ instal_panel() {
 # Fungsi untuk menginstal otomatis
 instal_otomatis() {
 echo -e "${BIRU}Gausah ngeharap gw nambahin fitur ini😂😂"
-echo-e "${MERAH}Yang namanya ${nama} orang tolol 🗿
+echo -e "${MERAH}Yang namanya ${nama} orang tolol 🗿
 sleep 10
 clear
 reboot
+}
+
+# Kata kata hari ini
+kata_kata() {
+echo -e "${HIJAU}Kita harus berhati hati"
+echo -e "${MERAH}Agar kita tidak selamat"
+sleep 15
 }
 
 # Skrip utama
@@ -244,8 +251,9 @@ while true; do
   echo "2. Uninstall theme"
   echo "3. Instal panel"
   echo "4. Instal otomatis"
+  echo "5. Kata kata manis hari ini"
   echo "x. Exit"
-  echo -e "Masukkan pilihan (1/2/3/4/x):"
+  echo -e "Masukkan pilihan (1/2/3/4/5/x):"
   read -r MENU_CHOICE
   clear
 
@@ -261,7 +269,10 @@ while true; do
       ;;
     4)
     instal_otomatis
-    ;;
+      ;;
+    5)
+    kata_kata
+      ;;
     x)
       echo "Keluar dari skrip."
       exit 0
