@@ -241,6 +241,7 @@ while true; do
   echo "1. Install theme"
   echo "2. Uninstall theme"
   echo "3. Instal panel"
+  echo "4. Instal otomatis"
   echo "x. Exit"
   echo -e "Masukkan pilihan (1/2/x):"
   read -r MENU_CHOICE
