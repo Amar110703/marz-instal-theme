@@ -7,7 +7,7 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
-echo "${BIRU}Silahkan masukan nama anda 😂😂"
+echo -e "${BIRU}Silahkan masukan nama anda 😂😂"
 read nama
 
 
