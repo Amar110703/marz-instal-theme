@@ -7,11 +7,6 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
-echo -e "${BIRU}Silahkan masukan nama anda 😂😂"
-read nama
-
-
-
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
   echo -e ""
@@ -221,7 +216,9 @@ instal_panel() {
 
 # Fungsi untuk menginstal otomatis
 instal_otomatis() {
-echo -e "${BIRU}MASIH DALAM TAHAP PENGEMBANGAN BRUH"
+echo -e "${BIRU}+-----------------------------------------+${NC}"
+echo -e "${BIRU}|           𝗙𝗜𝗧𝗨𝗥 𝗖𝗢𝗠𝗜𝗡𝗚 𝗦𝗢𝗢𝗡           |${NC}"
+echo -e "${BIRU}+-----------------------------------------+${NC}"
 sleep 5
 clear
 }
@@ -254,26 +251,25 @@ authenticate
 
 while true; do
   clear
-  echo -e "                                                       "
-  echo -e "${BIRU}[+] =============================================== [+]${NC}"
-  echo -e "${BIRU}[+]                   SELECT OPTION                 [+]${NC}"
-  echo -e "${BIRU}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  echo -e "SELECT OPTION :"
-  echo "0. Fitur coming soon"
-  echo "1. Install theme"
-  echo "2. Uninstall theme"
-  echo "3. Instal panel"
-  echo "4. Instal otomatis"
-  echo "5. Kata kata manis hari ini"
-  echo "x. Exit"
-  echo -e "Masukkan pilihan (1/2/3/4/5/x) :"
+  echo -e "${BIRU}+-----------------------------------------+${NC}"
+  echo -e "${BIRU}|             𝗦𝗘𝗟𝗘𝗖𝗧 𝗢𝗣𝗧𝗜𝗢𝗡𝗦             |${NC}"
+  echo -e "${BIRU}+-----------------------------------------+${NC}"
+  echo -e "${BIRU}|0. FITUR COMING SOON                     |${NC}"
+  echo -e "${BIRU}|1. INSTAL THEME                          |${NC}"
+  echo -e "${BIRU}|2. UINSTAL THEME                         |${NC}"
+  echo -e "${BIRU}|3. INSTAL PANEL (BIASA)                  |${NC}"
+  echo -e "${BIRU}|4. INSTAL PANEL (OTOMATIS)               |${NC}"
+  echo -e "${BIRU}|5. KATA KATA KNTL                        |${NC}"
+  echo -e "${BIRU}|x. EXIT TO SCRIPT                        |${NC}"
+  echo -e "${BIRU}+-----------------------------------------+${NC}"
+  echo -e "${BIRU}|𝗠𝗔𝗦𝗨𝗞𝗔𝗡 𝗣𝗜𝗟𝗜𝗛𝗔𝗡 (1/2/3/4/5/𝗫) :         |${NC}"
+  echo -e "${BIRU}+-----------------------------------------+${NC}"
   read -r MENU_CHOICE
   clear
 
   case "$MENU_CHOICE" in
     0)
-    coming_soon
+      coming_soon
       ;;
     1)
       install_theme
@@ -285,10 +281,10 @@ while true; do
       instal_panel
       ;;
     4)
-    instal_otomatis
+      instal_otomatis
       ;;
     5)
-    kata_kata
+      kata_kata
       ;;
     x)
       echo "Keluar dari skrip."
