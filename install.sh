@@ -217,7 +217,7 @@ instal_panel() {
 # Fungsi untuk menginstal otomatis
 instal_otomatis() {
 echo -e "${BIRU}+-----------------------------------------+${NC}"
-echo -e "${BIRU}|           𝗙𝗜𝗧𝗨𝗥 𝗖𝗢𝗠𝗜𝗡𝗚 𝗦𝗢𝗢𝗡            |${NC}"
+echo -e "${BIRU}|            𝗙𝗜𝗧𝗨𝗥 𝗖𝗢𝗠𝗜𝗡𝗚 𝗦𝗢𝗢𝗡           |${NC}"
 echo -e "${BIRU}+-----------------------------------------+${NC}"
 sleep 5
 clear
