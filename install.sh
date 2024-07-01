@@ -221,19 +221,31 @@ instal_panel() {
 
 # Fungsi untuk menginstal otomatis
 instal_otomatis() {
-echo -e "${BIRU}Gausah ngeharap gw nambahin fitur ini😂😂"
-echo -e "${MERAH}Yang namanya ${nama} orang tolol 🗿"
-sleep 10
+echo -e "${BIRU}MASIH DALAM TAHAP PENGEMBANGAN BRUH"
+sleep 5
 clear
-reboot
 }
 
 # Kata kata hari ini
 kata_kata() {
-echo -e "${HIJAU}Kita harus berhati hati"
+echo -e "Kita harus berhati hati"
 echo -e "${MERAH}Agar kita tidak selamat"
 sleep 15
 }
+
+#Coming soon
+coming_soon() {
+echo -e "${BIRU}+-------------------------------------------+${NC}"
+echo -e "${BIRU}|           FITUR YANG AKAN HADIR           |${NC}"
+echo -e "${BIRU}+-------------------------------------------+${NC}"
+echo -e "${BIRU}|            AUTO INSTAL PANEL              |${NC}"
+echo -e "${BIRU}|              DDOS ATTACK                  |${NC}"
+echo -e "${BIRU}|               SPAM OTP                    |${NC}"
+echo -e "${BIRU}|                 DLL                       |${NC}"
+echo -e "${BIRU}+-------------------------------------------+${NC}"
+echo -e "${BIRU}|         NANTIKAN SAJA FITUR NYA 😁        |${NC}"
+echo -e "${BIRU}|         KALAU SEMPAT GW TAMBAHIN 🗿       |${NC}"
+echo -e "${BIRU}+-------------------------------------------+${NC}"
 
 # Skrip utama
 display_welcome
@@ -247,6 +259,7 @@ while true; do
   echo -e "${BIRU}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   echo -e "SELECT OPTION :"
+  echo "0. Fitur coming soon"
   echo "1. Install theme"
   echo "2. Uninstall theme"
   echo "3. Instal panel"
@@ -258,6 +271,9 @@ while true; do
   clear
 
   case "$MENU_CHOICE" in
+    0)
+    coming_soon
+      ;;
     1)
       install_theme
       ;;
