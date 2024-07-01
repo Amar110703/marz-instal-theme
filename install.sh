@@ -228,8 +228,7 @@ clear
 
 # Kata kata hari ini
 kata_kata() {
-echo -e "Kita harus berhati hati"
-echo -e "${MERAH}Agar kita tidak selamat"
+echo -e "KONTOL BAPAK KAU PECAH"
 sleep 15
 }
 
