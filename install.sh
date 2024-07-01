@@ -246,6 +246,7 @@ echo -e "${BIRU}+-------------------------------------------+${NC}"
 echo -e "${BIRU}|         NANTIKAN SAJA FITUR NYA 😁        |${NC}"
 echo -e "${BIRU}|         KALAU SEMPAT GW TAMBAHIN 🗿       |${NC}"
 echo -e "${BIRU}+-------------------------------------------+${NC}"
+sleep 15
 }
 
 # Skrip utama
