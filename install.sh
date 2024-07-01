@@ -217,7 +217,7 @@ instal_panel() {
 # Fungsi untuk menginstal otomatis
 instal_otomatis() {
 echo -e "${BIRU}+-----------------------------------------+${NC}"
-echo -e "${BIRU}|           𝗙𝗜𝗧𝗨𝗥 𝗖𝗢𝗠𝗜𝗡𝗚 𝗦𝗢𝗢𝗡           |${NC}"
+echo -e "${BIRU}|           𝗙𝗜𝗧𝗨𝗥 𝗖𝗢𝗠𝗜𝗡𝗚 𝗦𝗢𝗢𝗡            |${NC}"
 echo -e "${BIRU}+-----------------------------------------+${NC}"
 sleep 5
 clear
@@ -236,8 +236,8 @@ echo -e "${BIRU}|           FITUR YANG AKAN HADIR           |${NC}"
 echo -e "${BIRU}+-------------------------------------------+${NC}"
 echo -e "${BIRU}|            AUTO INSTAL PANEL              |${NC}"
 echo -e "${BIRU}|              DDOS ATTACK                  |${NC}"
-echo -e "${BIRU}|               SPAM OTP                    |${NC}"
-echo -e "${BIRU}|                 DLL                       |${NC}"
+echo -e "${BIRU}|                SPAM OTP                   |${NC}"
+echo -e "${BIRU}|                   DLL                     |${NC}"
 echo -e "${BIRU}+-------------------------------------------+${NC}"
 echo -e "${BIRU}|         NANTIKAN SAJA FITUR NYA 😁        |${NC}"
 echo -e "${BIRU}|         KALAU SEMPAT GW TAMBAHIN 🗿       |${NC}"
@@ -252,7 +252,7 @@ authenticate
 while true; do
   clear
   echo -e "${BIRU}+-----------------------------------------+${NC}"
-  echo -e "${BIRU}|             𝗦𝗘𝗟𝗘𝗖𝗧 𝗢𝗣𝗧𝗜𝗢𝗡𝗦             |${NC}"
+  echo -e "${BIRU}|             𝗦𝗘𝗟𝗘𝗖𝗧 𝗢𝗣𝗧𝗜𝗢𝗡𝗦              |${NC}"
   echo -e "${BIRU}+-----------------------------------------+${NC}"
   echo -e "${BIRU}|0. FITUR COMING SOON                     |${NC}"
   echo -e "${BIRU}|1. INSTAL THEME                          |${NC}"
@@ -262,7 +262,7 @@ while true; do
   echo -e "${BIRU}|5. KATA KATA KNTL                        |${NC}"
   echo -e "${BIRU}|x. EXIT TO SCRIPT                        |${NC}"
   echo -e "${BIRU}+-----------------------------------------+${NC}"
-  echo -e "${BIRU}|𝗠𝗔𝗦𝗨𝗞𝗔𝗡 𝗣𝗜𝗟𝗜𝗛𝗔𝗡 (1/2/3/4/5/𝗫) :         |${NC}"
+  echo -e "${BIRU}|𝗠𝗔𝗦𝗨𝗞𝗔𝗡 𝗣𝗜𝗟𝗜𝗛𝗔𝗡 (1/2/3/4/5/𝗫) :          |${NC}"
   echo -e "${BIRU}+-----------------------------------------+${NC}"
   read -r MENU_CHOICE
   clear
