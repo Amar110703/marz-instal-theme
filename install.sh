@@ -217,7 +217,7 @@ instal_panel() {
 # Fungsi untuk menginstal otomatis
 instal_otomatis() {
 echo -e "${BIRU}+-----------------------------------------+${NC}"
-echo -e "${BIRU}|            𝗙𝗜𝗧𝗨𝗥 𝗖𝗢𝗠𝗜𝗡𝗚 𝗦𝗢𝗢𝗡           |${NC}"
+echo -e "${BIRU}|            FITUR COMING SOON            |${NC}"
 echo -e "${BIRU}+-----------------------------------------+${NC}"
 sleep 5
 clear
@@ -252,17 +252,17 @@ authenticate
 while true; do
   clear
   echo -e "${BIRU}+-----------------------------------------+${NC}"
-  echo -e "${BIRU}|             𝗦𝗘𝗟𝗘𝗖𝗧 𝗢𝗣𝗧𝗜𝗢𝗡𝗦              |${NC}"
+  echo -e "${BIRU}|             SELECT OPTIONS              |${NC}"
   echo -e "${BIRU}+-----------------------------------------+${NC}"
-  echo -e "${BIRU}|0. FITUR COMING SOON                     |${NC}"
-  echo -e "${BIRU}|1. INSTAL THEME                          |${NC}"
-  echo -e "${BIRU}|2. UINSTAL THEME                         |${NC}"
-  echo -e "${BIRU}|3. INSTAL PANEL (BIASA)                  |${NC}"
-  echo -e "${BIRU}|4. INSTAL PANEL (OTOMATIS)               |${NC}"
-  echo -e "${BIRU}|5. KATA KATA KNTL                        |${NC}"
-  echo -e "${BIRU}|x. EXIT TO SCRIPT                        |${NC}"
+  echo -e "${BIRU}|0. 𝙵𝙸𝚃𝚄𝚁 𝙲𝙾𝙼𝙸𝙽𝙶 𝚂𝙾𝙾𝙽                     |${NC}"
+  echo -e "${BIRU}|1. 𝙸𝙽𝚂𝚃𝙻 𝚃𝙷𝙴𝙼𝙴                           |${NC}"
+  echo -e "${BIRU}|2. 𝚄𝙸𝙽𝚂𝚃𝙰𝙻 𝚃𝙷𝙴𝙼𝙴                         |${NC}"
+  echo -e "${BIRU}|3. 𝙸𝙽𝚂𝚃𝙰𝙻 𝙿𝙰𝙽𝙴𝙻 (𝙱𝙸𝙰𝚂𝙰)                  |${NC}"
+  echo -e "${BIRU}|4. 𝙸𝙽𝚂𝚃𝙰𝙻 𝙿𝙰𝙽𝙴𝙻 (𝙾𝚃𝙾𝙼𝙰𝚃𝙸𝚂)               |${NC}"
+  echo -e "${BIRU}|5. 𝙺𝙰𝚃𝙰 𝙺𝙰𝚃𝙰 𝙺𝙽𝚃𝙻                        |${NC}"
+  echo -e "${BIRU}|x. 𝙴𝚇𝙸𝚃 𝚃𝙾 𝚂𝙲𝚁𝙸𝙿𝚃                        |${NC}"
   echo -e "${BIRU}+-----------------------------------------+${NC}"
-  echo -e "${BIRU}|𝗠𝗔𝗦𝗨𝗞𝗔𝗡 𝗣𝗜𝗟𝗜𝗛𝗔𝗡 (1/2/3/4/5/𝗫) :          |${NC}"
+  echo -e "${BIRU}|PILIH SALAH SATU (1/2/3/4/5/𝗫) :         |${NC}"
   echo -e "${BIRU}+-----------------------------------------+${NC}"
   read -r MENU_CHOICE
   clear
