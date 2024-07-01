@@ -38,7 +38,7 @@ display_welcome() {
   echo -e "${BIRU}+--------------+-------------------+-----------------+${NC}"
   echo -e ""
   echo -e ""
-  sleep 30
+  sleep 10
 }
 
 
@@ -216,7 +216,7 @@ instal_panel() {
   echo -e "${HIJAU}[+]                 INSTAL PANEL SUKSES             [+]${NC}"
   echo -e "${HIJAU}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  sleep 10
+  sleep 5
 }
 
 # Fungsi untuk menginstal otomatis
@@ -229,7 +229,7 @@ clear
 # Kata kata hari ini
 kata_kata() {
 echo -e "KONTOL BAPAK KAU PECAH"
-sleep 15
+sleep 5
 }
 
 #Coming soon
@@ -245,7 +245,7 @@ echo -e "${BIRU}+-------------------------------------------+${NC}"
 echo -e "${BIRU}|         NANTIKAN SAJA FITUR NYA 😁        |${NC}"
 echo -e "${BIRU}|         KALAU SEMPAT GW TAMBAHIN 🗿       |${NC}"
 echo -e "${BIRU}+-------------------------------------------+${NC}"
-sleep 15
+sleep 10
 }
 
 # Skrip utama
