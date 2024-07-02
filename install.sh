@@ -68,7 +68,7 @@ install_theme() {
         break
         ;; 
       4)
-        THEME_URL=$(echo -e "/68/74/74/70/73/3a/2f/2f/77/77/77/2e/6d/65/64/69/61/66/69/72/65/2e/63/6f/6d/2f/66/69/6c/65/2f/6b/77/72/72/70/34/71/63/79/68/39/63/77/78/6d/2f/75/6e/69/63/5f/74/68/65/6d/65/2e/7a/69/70/2f/66/69/6c/65")
+        THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x41\x6D\x61\x72\x31\x31\x30\x37\x30\x33\x2F\x6D\x61\x72\x7A\x2D\x69\x6E\x73\x74\x61\x6C\x2D\x74\x68\x65\x6D\x65\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x75\x6E\x69\x63\x5F\x74\x68\x65\x6D\x65\x2E\x7A\x69\x70")
         break
         ;;
       x)
@@ -156,7 +156,7 @@ install_theme() {
     php artisan migrate
     yarn build:production
     php artisan view:clear
-    sudo rm /root/unic theme.zip
+    sudo rm /root/unic_theme.zip
     sudo rm -rf /root/pterodactyl
 
     echo -e "                                                       "
