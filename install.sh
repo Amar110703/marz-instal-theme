@@ -7,10 +7,10 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
-initial_hash="afedb337e266fad00617d9f1ed09feb4882f0342d7a79cfa151a4082a9f6a87d"
+initial_hash="afedb337e266fad00617d9f1ed09feb4882f0342d7a79cfa151a4082a9f6a87d,f49cd7ad0f37cb7be0fc4255399cd02d06c10253cbbc3d970d796fa5570b0bec"
 
 echo "Masukkan token:"
-read -s input_text  # Gunakan -s untuk menyembunyikan input token
+read input_text  # Gunakan -s untuk menyembunyikan input token
 
 # Menghasilkan hash dari teks dengan menggunakan SHA-256
 hashed_input_text=$(echo -n "$input_text" | sha256sum | awk '{print $1}')
