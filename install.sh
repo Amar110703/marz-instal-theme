@@ -187,7 +187,7 @@ uninstall_theme() {
   echo -e "${BIRU}[+]                    DELETE THEME                 [+]${NC}"
   echo -e "${BIRU}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  bash <(curl https://raw.githubusercontent.com/Foxstoree/pterodactyl-auto-installer/main/repair.sh)
+  bash <(curl https://raw.githubusercontent.com/Amar110703/marz-instal-theme/main/DELETE%20THEME)
   echo -e "                                                       "
   echo -e "${HIJAU}[+] =============================================== [+]${NC}"
   echo -e "${HIJAU}[+]                 DELETE THEME SUKSES             [+]${NC}"
