@@ -10,7 +10,7 @@ NC='\033[0m'
 initial_hash="afedb337e266fad00617d9f1ed09feb4882f0342d7a79cfa151a4082a9f6a87d"
 
 echo "Masukkan token:"
-read input_text
+read -s input_text  # Gunakan -s untuk menyembunyikan input token
 
 # Menghasilkan hash dari teks dengan menggunakan SHA-256
 hashed_input_text=$(echo -n "$input_text" | sha256sum | awk '{print $1}')
@@ -22,6 +22,7 @@ if [ "$hashed_input_text" = "$initial_hash" ]; then
     echo "Token valid. Akses diberikan."
 else
     echo "Token tidak valid. Akses ditolak."
+    exit 1  # Keluar dari script dengan kode error 1
 fi
 
 # Fungsi untuk menampilkan pesan selamat datang
