@@ -47,11 +47,11 @@ install_theme() {
     echo -e "${BIRU}[+] =============================================== [+]${NC}"
     echo -e "                                                       "
     echo -e "PILIH THEME YANG INGIN DI INSTALL"
-    echo "1. stellar"
-    echo "2. billing"
-    echo "3. enigma"
-    echo "4. unix"
-    echo "x. kembali"
+    echo "1. 𝚂𝚃𝙴𝙻𝙻𝙰𝚁"
+    echo "2. 𝙱𝙸𝙻𝙻𝙸𝙽𝙶"
+    echo "3. 𝙴𝙽𝙸𝙶𝙼𝙰"
+    echo "4. 𝚄𝙽𝙸𝚇 (𝙴𝚁𝙾𝚁)"
+    echo "x. 𝙺𝙴𝙼𝙱𝙰𝙻𝙸"
     echo -e "masukan pilihan (1/2/3/x) :"
     read -r SELECT_THEME
     case "$SELECT_THEME" in
