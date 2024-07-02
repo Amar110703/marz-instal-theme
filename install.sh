@@ -141,7 +141,7 @@ install_theme() {
     clear
     return
 
-if [ "$SELECT_THEME" -eq 4 ]; then
+  elif [ "$SELECT_THEME" -eq 4 ]; then
     echo -e "                                                       "
     echo -e "${BIRU}[+] =============================================== [+]${NC}"
     echo -e "${BIRU}[+]                  INSTALLASI THEMA              [+]${NC}"
