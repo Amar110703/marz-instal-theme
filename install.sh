@@ -7,6 +7,23 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
+initial_hash="afedb337e266fad00617d9f1ed09feb4882f0342d7a79cfa151a4082a9f6a87d"
+
+echo "Masukkan token:"
+read input_text
+
+# Menghasilkan hash dari teks dengan menggunakan SHA-256
+hashed_input_text=$(echo -n "$input_text" | sha256sum | awk '{print $1}')
+
+echo "Nilai hashed_input_text: $hashed_input_text"
+echo "Nilai initial_hash: $initial_hash"
+
+if [ "$hashed_input_text" = "$initial_hash" ]; then
+    echo "Token valid. Akses diberikan."
+else
+    echo "Token tidak valid. Akses ditolak."
+fi
+
 # Fungsi untuk menampilkan pesan selamat datang
 display_welcome() {
   echo -e ""
