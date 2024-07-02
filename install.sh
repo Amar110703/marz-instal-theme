@@ -50,6 +50,7 @@ install_theme() {
     echo "1. stellar"
     echo "2. billing"
     echo "3. enigma"
+    echo "4. unix"
     echo "x. kembali"
     echo -e "masukan pilihan (1/2/3/x) :"
     read -r SELECT_THEME
@@ -66,6 +67,10 @@ install_theme() {
         THEME_URL=$(echo -e "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x44\x49\x54\x5A\x5A\x31\x31\x32\x2F\x66\x6F\x78\x78\x68\x6F\x73\x74\x74\x2F\x72\x61\x77\x2F\x6D\x61\x69\x6E\x2F\x43\x33\x2E\x7A\x69\x70")
         break
         ;; 
+      4)
+        THEME_URL=$(echo -e "/68/74/74/70/73/3a/2f/2f/77/77/77/2e/6d/65/64/69/61/66/69/72/65/2e/63/6f/6d/2f/66/69/6c/65/2f/6b/77/72/72/70/34/71/63/79/68/39/63/77/78/6d/2f/75/6e/69/63/5f/74/68/65/6d/65/2e/7a/69/70/2f/66/69/6c/65")
+        break
+        ;;
       x)
         return
         ;;
@@ -136,6 +141,33 @@ install_theme() {
     clear
     return
 
+if [ "$SELECT_THEME" -eq 4 ]; then
+    echo -e "                                                       "
+    echo -e "${BIRU}[+] =============================================== [+]${NC}"
+    echo -e "${BIRU}[+]                  INSTALLASI THEMA              [+]${NC}"
+    echo -e "${BIRU}[+] =============================================== [+]${NC}"
+    echo -e "                                                                   "
+    sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
+    curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+    sudo apt install -y nodejs
+    sudo npm i -g yarn
+    cd /var/www/pterodactyl
+    yarn add react-feather
+    php artisan migrate
+    yarn build:production
+    php artisan view:clear
+    sudo rm /root/unic theme.zip
+    sudo rm -rf /root/pterodactyl
+
+    echo -e "                                                       "
+    echo -e "${HIJAU}[+] =============================================== [+]${NC}"
+    echo -e "${HIJAU}[+]                   INSTALL SUCCESS               [+]${NC}"
+    echo -e "${HIJAU}[+] =============================================== [+]${NC}"
+    echo -e ""
+    sleep 2
+    clear
+    return
+
   elif [ "$SELECT_THEME" -eq 3 ]; then
     echo -e "                                                       "
     echo -e "${BIRU}[+] =============================================== [+]${NC}"
@@ -176,7 +208,7 @@ install_theme() {
     sleep 5
   else
     echo ""
-    echo "Pilihan tidak valid. silahkan pilih 1/2/3."
+    echo "Pilihan tidak valid. silahkan pilih 1/2/3/4."
   fi
 }
 
