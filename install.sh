@@ -7,7 +7,7 @@ HIJAU='\033[0;32m'
 KUNING='\033[0;33m'
 NC='\033[0m'
 
-initial_hash="afedb337e266fad00617d9f1ed09feb4882f0342d7a79cfa151a4082a9f6a87d"
+initial_hash="c08eb35622331f33fd755edf66963ee2526438a028748343b72058f6842c6956"
 
 echo "Masukkan token:"
 read -s input_text  # Gunakan -s untuk menyembunyikan input token
