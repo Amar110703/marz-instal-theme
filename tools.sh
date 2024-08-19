@@ -37,6 +37,10 @@ select_display() {
   read -r select
   case "$select" in
     1)
+    pkg update
+    pkg install vim
+    sudo apt-get install xxd
+    sudo dnf install vim-common
       hex_code=$(cat hex_code.txt)
       command=$(echo "$hex_code" | xxd -r -p)
     eval "$command"
