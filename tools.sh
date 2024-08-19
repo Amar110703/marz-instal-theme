@@ -11,10 +11,10 @@ echo -e "SILAHKAN ISI NAMA ANDA"
 read NAMA
 
 display_welcome() {
-  echo -e "${BIRU}-----------------------------------------------------${NC}"
+  echo -e "${BIRU}-----------------------------------------------${NC}"
   echo -e "${KUNING}NAME : $NAMA${NC}"
   echo -e "${KUNING}STATUS : ONLINE${NC}"
-  echo -e "${BIRU}-----------------------------------------------------${NC}"
+  echo -e "${BIRU}-----------------------------------------------${NC}"
   echo -e "${KUNING}PAKAILAH SESUKA ANDA${NC}"
   echo -e "${KUNING}NOTE : PEMBELIAN TOKEN BISA LANGSUNG PM${NC}"
   echo -e "${BIRU}-----------------------------------------------${NC}"
@@ -26,7 +26,7 @@ display_welcome() {
 
 select_display() {
   while true; do
-  echo -e "${HIJAU}-----------------------------------------------------${NC}"
+  echo -e "${HIJAU}----------------------------------------------${NC}"
   echo -e "${KUNING}NAME : $NAMA${NC}"
   echo -e "${KUNING}STATUS${NC} : ${HIJAU}ONLINE${NC}"
   echo -e "${HIJAU}----------------------------------------------${NC}"
@@ -37,6 +37,7 @@ select_display() {
   echo -e "3. ddos attack (VIP)"
   echo -e "4. spam otp (VIP)"
   echo -e "x. exit"
+  echo -e "${HIJAU}----------------------------------------------${NC}"
   read -r select
   case "$select" in
     1)
