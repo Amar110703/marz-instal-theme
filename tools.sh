@@ -20,6 +20,7 @@ display_welcome() {
   echo -e "${KUNING}-----------------------------------------------${NC}"
   echo -e "${KUNING}NO : 085960349812${NC}"
   echo -e "${KUNING}CREADIT : MARZ OFFC${NC}"
+  sleep 5
   clear
 }
 
