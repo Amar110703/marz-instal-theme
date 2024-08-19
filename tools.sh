@@ -17,7 +17,7 @@ display_welcome() {
   echo -e "${BIRU}-----------------------------------------------------${NC}"
   echo -e "${KUNING}PAKAILAH SESUKA ANDA${NC}"
   echo -e "${KUNING}NOTE : PEMBELIAN TOKEN BISA LANGSUNG PM${NC}"
-  echo -e "${KUNING}-----------------------------------------------${NC}"
+  echo -e "${BIRU}-----------------------------------------------${NC}"
   echo -e "${KUNING}NO : 085960349812${NC}"
   echo -e "${KUNING}CREADIT : MARZ OFFC${NC}"
   clear
@@ -25,6 +25,9 @@ display_welcome() {
 
 select_display() {
   while true; do
+  echo -e "${HIJAU}-----------------------------------------------------${NC}"
+  echo -e "${KUNING}NAME : $NAMA${NC}"
+  echo -e "${KUNING}STATUS${NC} : ${HIJAU}ONLINE${NC}"
   echo -e "${HIJAU}----------------------------------------------${NC}"
   echo -e "${KUNING}silahkan pilih salah satu dari menu di bawah ini${NC}"
   echo -e "${HIJAU}----------------------------------------------${NC}"
