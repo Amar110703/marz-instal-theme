@@ -29,7 +29,7 @@ clear
 }
 
 # Daftar nama pengguna premium dalam format heksadesimal
-user1=("616d6172" "6275796572" "73656c6c6572")
+user1=("616d6172" "6275796572" "73656c6c6572" "6b79656573746f7265")
 
 # Konversi daftar heksadesimal ke format string
 prem1=()
