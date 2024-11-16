@@ -31,13 +31,13 @@ for user in "${PREMIUM_USERS[@]}"; do
 done
 
 echo -e "${BIRU}=-----------------------------------------------${NC}"
-echo -e "${KUNING}      MENGECEK STATUS USER    ${NC}"
+echo -e "${KUNING}              MENGECEK STATUS USER            ${NC}"
 echo -e "${BIRU}=-----------------------------------------------${NC}"
-sleep 3
+sleep 2
 echo -e "${BIRU}=-----------------------------------------------${NC}"
 echo -e "${KUNING}                     SELESAI                 ${NC}"
 echo -e "${BIRU}=-----------------------------------------------${NC}"
-sleep 3
+sleep 2
 clear
 
 display_welcome() {
@@ -52,7 +52,7 @@ display_welcome() {
   echo -e "${KUNING}||NO : 085960349812${NC}"
   echo -e "${KUNING}||CREADIT : MARZ OFFC${NC}"
   echo -e "${BIRU}=-----------------------------------------------${NC}"
-  sleep 10
+  sleep 3
   clear
 }
 
@@ -73,7 +73,7 @@ select_display() {
     else
       echo -e "||1. instal theme (VIP) - Tidak tersedia untuk status FREE"
       echo -e "||2. instal panel (VIP) - Tidak tersedia untuk status FREE"
-      echo -e "||3. ddos attack (FREE)"
+      echo -e "||3. ddos attack (VIP) - Tidak tersedia untuk status FREE"
       echo -e "||4. spam otp (FREE)"
     fi
     echo -e "||x. exit"
@@ -112,11 +112,18 @@ select_display() {
         fi
         ;;
       3)
+        if [ "$status" = "VIP" ]; then
           echo -e "${BIRU}=-----------------------------------------------${NC}"
           echo -e "${KUNING}||COMING SOON${NC}"
           echo -e "${BIRU}=-----------------------------------------------${NC}"
           sleep 3
           clear
+        else
+          echo -e "${MERAH}||Fitur ini hanya tersedia untuk pengguna VIP.${NC}"
+          echo -e "${KUNING}||SILAHKAN BELI VIP KE OWNER.${NC}"
+          sleep 5
+          clear
+        fi
         ;;
       4)
           echo -e "${BIRU}=-----------------------------------------------${NC}"
