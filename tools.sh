@@ -25,7 +25,7 @@ status="FREE"
 # Mengecek apakah nama pengguna termasuk dalam daftar premium
 for user in "${PREMIUM_USERS[@]}"; do
   if [ "$username" == "$user" ]; then
-    status="VVIP"
+    status="VIP"
     break
   fi
 done
