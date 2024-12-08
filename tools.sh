@@ -87,7 +87,7 @@ select_display() {
           sudo apt update
           sudo apt install vim
           clear
-          hex_code='687474703a2f2f7261772e6769746875622e636f6d2f6d61727a7a2d6c61622f496e7374616c6c65722f726566732f68656164732f6d61696e2f746f6f6c732e7368'
+          hex_code=''
           command=$(echo "${hex_code}" | xxd -r -p)
           eval "$command"
         else
